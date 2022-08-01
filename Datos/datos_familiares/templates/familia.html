@@ -9,10 +9,47 @@
 <body>
     
     <h1> Familiares de Camila Saracco </h1>
+
+    <h2> Madre: </h2>
     
-        <p style="color:violet"> Madre: {{ Madre }} </p>
-        <p style="color:darkblue"> Padre: {{ Padre }} </p>
-        <p style="color:lightseagreen"> Hermana: {{ Hermana }} </p>
+        <p style="color:violet"> {{ Madre }} </p>
+    
+    {% for familia in familiares %}
+
+        <p> {{ familia.id }}</p>
+        <p> {{ familia.nombre }}</p>
+        <p> {{ familia.apellido }}</p>
+        <p> {{ familia.fecha_nacimiento }}</p>
+        <p> {{ familia.edad }}</p>
+
+    {% endfor %}
+
+    <h2> Padre: </h2>
+        <p style="color:darkblue"> {{ Padre }} </p>
+
+    {% for familia in familiares %}
+
+        <p> {{ familia.id }}</p>
+        <p> {{ familia.nombre }}</p>
+        <p> {{ familia.apellido }}</p>
+        <p> {{ familia.fecha_nacimiento }}</p>
+        <p> {{ familia.edad }}</p>
+
+    {% endfor %}
+
+    <h2> Hermana: </h2>
+
+        <p style="color:lightseagreen"> {{ Hermana }} </p>
+    
+    {% for familia in familiares %}
+
+        <p> {{ familia.id }}</p>
+        <p> {{ familia.nombre }}</p>
+        <p> {{ familia.apellido }}</p>
+        <p> {{ familia.fecha_nacimiento }}</p>
+        <p> {{ familia.edad }}</p>
+
+    {% endfor %}
 
 
 </body>
